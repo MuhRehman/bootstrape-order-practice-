@@ -4,18 +4,70 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/d6a63264e0.js" crossorigin="anonymous"></script> -->
   </head>
 
   <body>
+
+   
+    <a href="#contact">
+      <div class="button">
+         <div class="button-text contactme">
+              Contact me
+          </div>
+          <div class="emailcontainer">
+            contact@website.com
+        </div>
+      </div>
+  </a>
+  
       <section class="section-first">
+        <div class="wrapper">
+          <div class="frame">
+            <h1></h1>
+          </div>
+       
+        </div>
+        <div class="container">
 
+          <div class="box " id="one"><i class="fas fa-plus frame"></i></div>
+          <div class="box" id="two"><i class="fas fa-plus"></i></div>
+          <div class="box" id="three"><i class="fas fa-plus"></i></div>
+          <div class="box" id="four"><i class="fas fa-plus frame"></i></div>
+          <div class="box" id="five"><i class="fas fa-plus"></i></div>
+          <div class="box" id="six"><i class="fas fa-plus"></i></div>
+          <div class="box" id="seven"><i class="fas fa-plus frame"></i></div>
+          <div class="box" id="eat"><i class="fas fa-plus "></i></div>
+          <div class="box" id="nine"><i class="fas fa-plus"></i></div>
+          <div class="box" id="ten"><i class="fas fa-plus frame"></i></div>
+          <div class="box" id="eleven"><i class="fas fa-plus"></i></div>
+          <div class="box" id="twelve"><i class="fas fa-plus"></i></div>
+           <div class="box" id="thirteen"><i class="fas fa-plus frame"></i></div>
+       <!--   <div class="box" id="fourteen">Four</div>
+          <div class="box" id="fifteen">Four</div>
+          <div class="box" id="sixteen">Four</div>
+          <div class="box" id="seventeen">Four</div>
+          <div class="box" id="eighteen">Four</div>
+          <div class="box" id="nineteen">Four</div>
+          <div class="box" id="twenty">Four</div> -->
+        
+        </div>
 
+        <div class="wrapper">
+          <div class="frame">
+          </div>
+        </div>
       </section>
-      <div class="middle1">
+      <div class="rehman">
         <div class="counting-sec">
           <div class="inner-width">
             <div class="col">
@@ -44,16 +96,53 @@
           </div>
         </div>
       </div>
-      <section class="section-second">
+      <div class="rehman">
+        <div class="counting-sec">
+          <div class="inner-width">
+            <div class="col">
+              <i class="far fa-smile-wink"></i>
+              <div class="num">12,46</div>
+              <i class="fa fa-user"></i> <!-- uses solid style -->
+              <i class="fa fa-user"></i> <!-- uses regular style -->
+              <i class="fal fa-user"></i> <!-- uses light style -->
+            </div>
+    
+            <div class="col">
+              <i class="fas fa-briefcase"></i>
+              <div class="num">1009</div>
+              Services
+            </div>
+    
+            <div class="col">
+              <i class="far fa-money-bill-alt"></i>
+              <div class="num">687</div>
+              Sells
+            </div>
+    
+            <div class="col">
+              <i class="far fa-object-group"></i>
+              <div class="num">87</div>
+              Templates
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section-second ">
+  <div class="center">
 
+    <h1 class="animate__animated animate__slideInLeft animations-four" >An animated element</h1>
+  </div>
 
       </section>
-      <section class="section-third">
+      <section class="section-third ">
+        <div class="center">
 
+          <!-- <h1 class="animate__animated animate__slideInRight animations-four ani" >An animated element</h1> -->
+        </div>
 
       </section>
 
-  <div class="middle1">
+  <div class="rehman">
     <div class="counting-sec">
       <div class="inner-width">
         <div class="col">
@@ -84,10 +173,14 @@
   </div>
 
 
-  <script type="text/javascript">
-    $(".num").counterUp({delay:10,time:2000});
-  </script>
-
+  <script src="waypoint.js"></script>
+<script>
+$(".button-text.contactme").hover(function () {
+    $('.emailcontainer').show('slow');
+}, function () {
+    $('.emailcontainer').hide('slow');
+});
+</script>
 
   </body>
 </html>
