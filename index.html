@@ -5,13 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+
     <title>GSAP</title>
 </head>
-<body onload="loadImage()">
+<body >
+
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="count">1000</h3>
+        </div>
+        <div class="col-md-3">
+            <h3 class="count">1000</h3>
+        </div>
+        <div class="col-md-3">
+            <h3 class="count">1000</h3>
+        </div>
+        <div class="col-md-3">
+            <h3 class="count" id="counter">1000</h3>
+        </div>
+    </div>
+    <span class="counter">1,234,567.00</span>
+<span>$</span><span class="counter">1.99</span>
+<span class="counter">12345</span>
+<br>
+<br>
+<br>
+<br>
+
     <h1>Engineering For Tomorrow</h1>
     <button id="cta">watch here</button>
     <button id="cta1">watch here</button>
+
+
+
+
+
 
     <div class="panel">
     <div class="panel-inner">
@@ -21,28 +55,24 @@
     </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous"></script>
+    
     <script>
+//  alert("asd");
+            $('.count').counterUp({
+               
+                                delay: 10,
+                time: 1000
+            });
     
-    // document.getElementById('cta1').addEventListener('load',  () => {
+ 
 
-    //         alert("sad");
-    //     })
-    
-        document.getElementById('cta').addEventListener('click', function() {
-
-            TweenMax.to('.panel', 1.5, {scaleY: 1, height:'100vh', ease: Circ.easeOut });
-            
-            // TweenMax.to('#light', 1, {opacity: 1, y: 0, delay: 1, ease: Back.easeOut.config(1.7)});
-            // TweenMax.to('p', 1, {opacity: 1, y: 20, delay: 1.4});
-            // TweenMax.to('.box', 3, {opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3)});
-
-        })
-        document.getElementById('cta1').addEventListener('click', () => {
-            TweenMax.to('.panel-inner', 1.5, {scaleY: 2, height:'100vh', ease: Circ.easeOut });
-        })
-    
     </script>
 </body>
 </html>
